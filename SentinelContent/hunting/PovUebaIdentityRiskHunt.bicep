@@ -27,6 +27,14 @@ PovUebaIdentityAuth()
     LastSeen = max(TimeGenerated)
   by AccountUPN, AccountName
 | where FailedSignIns >= FailureThreshold
+| project
+    AccountUPN,
+    AccountName,
+    FailedSignIns,
+    SourceIPs,
+    Applications,
+    FirstSeen,
+    LastSeen
 | order by FailedSignIns desc
 '''
   }
