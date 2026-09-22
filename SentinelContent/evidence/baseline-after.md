@@ -27,10 +27,10 @@ PovUebaIdentityAuth()
 
 | Metric | Value |
 |---|---:|
-| Events | `284` |
-| Users | `8` |
-| Source IPs | `24` |
-| Failed sign-ins | `31` |
+| Events | 284 |
+| Users | 8 |
+| Source IPs | 24 |
+| Failed sign-ins | 31 |
 
 ## Schema validation
 
@@ -63,6 +63,14 @@ PovUebaIdentityAuth()
 - Identity failed-authentication hunt: `<Passed / Failed>`
 - Privileged-process hunt: `<Passed / Failed>`
 - Identity-to-process correlation query: `<Passed / Failed>`
+
+## Deployed hunting query validation
+
+- Hunting query: `POV UEBA - Repeated Failed Authentication by Account`
+- Deployment status: Successful
+- Query execution status: Passed
+- Dependency: `PovUebaIdentityAuth`
+- Outcome: `<number of results, or "0 results returned without error">`
 
 ## Conclusion
 
