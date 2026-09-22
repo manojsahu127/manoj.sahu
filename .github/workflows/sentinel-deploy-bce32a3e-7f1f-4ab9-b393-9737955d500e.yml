@@ -24,7 +24,7 @@ jobs:
       resourceGroupName: 'rg-philips-sentinel-poc'
       workspaceName: 'philipssentinelpoc'
       workspaceId: '6702d408-b003-418c-bf64-68cedd8e0bd9'
-      directory: '${{ github.workspace }}'
+      directory: '${{ github.workspace }}/SentinelContent'
       cloudEnv: 'AzureCloud'
       contentTypes: 'Parser,HuntingQuery'
       branch: 'Develop'
